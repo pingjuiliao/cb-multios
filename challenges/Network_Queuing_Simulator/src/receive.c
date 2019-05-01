@@ -91,12 +91,12 @@ int cgc_InitReceive(void) {
 			return(-1);
 		}
 		cgc_max_wall_clock = cgc_atof(buf);
-#ifdef PATCHED
+/*#ifdef PATCHED
 		if (cgc_max_wall_clock > 10.0) {
 			cgc_printf("Using max runtime of 10.0 seconds\n");
 			cgc_max_wall_clock = 10.0;
 		}
-#endif
+#endif*/
 	}
 
 	// init the cgc_NextPkt struct
